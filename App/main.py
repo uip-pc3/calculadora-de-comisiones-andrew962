@@ -3,6 +3,7 @@ from flask import render_template
 from flask import request
 
 
+
 App=Flask(__name__)
 
 
@@ -14,6 +15,7 @@ def index():
 @App.route('/porcentaje',methods=['POST'])
 def porcentaje():
     if request.method=='POST':
+        file=open("archivo.csv","w")
         nombre=request.form['nombre']
         apellido=request.form['apellido']
         venta = float(request.form.get('venta'))
@@ -27,6 +29,14 @@ def porcentaje():
             r = venta * 0.05
         else:
             r = '¡Usted no ha realizado ventas en el Mes!'
+        file.write(nombre)
+        file.write(",")
+        file.write(apellido)
+        file.write(",")
+        file.write(str(venta))
+        file.write(",")
+        file.write(str(r))
+        file.close()
         return render_template('porcentaje.html',nom=nombre,ape=apellido,ven=venta,rr=r)
 
 if __name__=="__main__":

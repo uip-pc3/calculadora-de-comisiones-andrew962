@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Ventas</title>
+    <link rel="stylesheet" type="text/css" href="../static/index.css"/>
+    <link rel="shortcut icon" type="icon" href="../static/abc.ico"/>
+    <title>ABC</title>
 </head>
-<body bgcolor="skyblue">
-    <h1 style="text-align:center">Tu Porcentage</h1>
+<body background="../static/fondo.jpg">
+    <div id="cuerpo">
+        <div id="titulo">
+            <img src="../static/abc.png" height="100px" width="200px">
+        </div>
+        <div id="struc">
+            <div id="cuadro">
+                <div id="titulonombre">
+                        <p style="color:black"><strong>Nombre:</strong></p>
+                </div>
+
+                <div id="tituloapellido">
+                        <p style="color:black"><strong>Apellido:</strong></p>
+                </div><div id="apellido">
+
+                </div>
+                <div id="tituloventa">
+                        <p style="color:black"><strong>venta:</strong></p>
+                </div>
+                <div id="boton">
+                <form  method="POST" action="/porcentaje">
+                    <p><input type="text" name="nombre" pattern="[A-Za-z]{3,16}" required="required"></p></br>
+                    <p><input type="text" name="apellido" pattern="[A-Za-z]{3,16}" required="required"></p></br>
+                    <p><input type="number" name="venta" min="100" max="1000000" required="required"></p></br>
+                    <p><input type="submit" value="Enviar"></p>
+                </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<h1 style="text-align:center">Tu Porcentaje</h1>
     <form method="POST" action="/porcentaje">
-        <p align="center"><strong>Nombre:<input type="text" name="nombre" required="required"></strong></p>
-        <p align="center"><strong>Apellido:<input type="text" name="apellido" required="required"></strong></p>
-        <p align="center"><strong>Venta:<input type="number" name="venta" required="required"></strong></p>
+        <p align="center"><strong>Nombre:<input type="text" name="nombre" pattern="[A-Za-z]{3,16}" required="required"></strong></p>
+        <p align="center"><strong>Apellido:<input type="text" name="apellido" pattern="[A-Za-z]{3,16}" required="required"></strong></p>
+        <p align="center"><strong>Venta:<input type="number" name="venta" min="100" max="1000000" required="required"></strong></p>
         <p align="center"><input type="submit" value="Enviar"></p>
-    </form>
+    </form>-->
 
 </body>
 </html>
