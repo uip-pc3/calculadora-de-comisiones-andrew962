@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
+    <link rel="stylesheet" type="text/css" href="../static/index.css"/>
+    <link rel="shortcut icon" type="icon" href="../static/abc.ico"/>
     <title>Porcentaje</title>
 </head>
-<body bgcolor="skyblue">
-<table align="center" border="1" cellpadding="10" bgcolor="white">
+<body background="../static/fondo.jpg">
+    <div id="cuerpo2">
+        <div id="struc2">
+            <div id="titulo2">
+                <img src="../static/abc.png" height="100px" width="200px">
+            </div>
+            <div id="cuadro2">
+                <div id="nombre">
+                    <strong><p>Nombre: {{ nom }} </p></strong>
+                </div>
+                <div id="apellido">
+                    <strong><p>Apellido: {{ ape }}</p></strong>
+                </div>
+                <div id="venta">
+                    <strong><p>Venta: {{ ven }}</p></strong>
+                </div>
+                <div id="comision">
+                    <strong><p>Comision: {{ rr }}</p></strong>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--<table align="center" border="1" cellpadding="10" bgcolor="white">
     <h1 style="text-align:center">Tu Comision</h1>
     <tr>
         <th><b>Nombre</b></th>
