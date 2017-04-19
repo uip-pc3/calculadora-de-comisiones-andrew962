@@ -1,0 +1,1 @@
+Search.setIndex({docnames:["index"],envversion:51,filenames:["index.rst"],objects:{},objnames:{},objtypes:{},terms:{"\u00edndic":0,busqued:0,modul:0,pagin:0},titles:["Welcome to Porcentaje&#8217;s documentation!"],titleterms:{and:0,documentation:0,indic:0,porcentaj:0,tabl:0,welcom:0}})
